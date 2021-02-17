@@ -1,5 +1,5 @@
 {% set name = "lux-api" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lux-api-{{ version }}.tar.gz
-  sha256: 01c5605a16b6130f159ab7d1d9d4ffd6fdc49ea854d9ab0f6481194e701c4a1f
+  sha256: 81d452027464179fac15c8141b4fd62e37451972fabd534fbb25d29d7cb809db
 
 build:
   number: 0
@@ -20,13 +20,14 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - python >=3.6 
+    - python >=3.6
     - scipy >=1.3.3
     - altair >=4.0.0
     - numpy >=1.16.5
     - pandas >=1.1.0
     - scikit-learn >=0.22
-    - lux-widget >=0.1.2
+    - lux-widget >=0.1.4
+    - matplotlib>=3.0.0
 
 test:
   imports:
@@ -41,8 +42,8 @@ about:
   home: https://github.com/lux-org/lux
   summary: A Python API for Intelligent Data Discovery
   license: Apache-2.0
-  license_file: LICENSE 
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
-    - dorisjlee 
+    - dorisjlee

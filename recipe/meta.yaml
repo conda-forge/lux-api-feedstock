@@ -25,7 +25,7 @@ requirements:
     - altair >=4.0.0
     - numpy >=1.16.5
     - scikit-learn >=0.22
-    - pandas
+    - pandas >=1.2.0
     - lux-widget
     - matplotlib
     - us

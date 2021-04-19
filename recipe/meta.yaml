@@ -1,5 +1,5 @@
 {% set name = "lux-api" %}
-{% set version = "0.2.3" %}
+{% set version = "0.3.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lux-api-{{ version }}.tar.gz
-  sha256: 81d452027464179fac15c8141b4fd62e37451972fabd534fbb25d29d7cb809db
+  sha256: af451e85d263c03fd596251373ff6e34d04e0c0609f2410c830114b84b102613
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 

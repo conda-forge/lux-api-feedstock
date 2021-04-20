@@ -33,10 +33,6 @@ test:
   imports:
     - lux
     - lux._config
-  commands:
-    - pip check
-  requires:
-    - pip
 
 about:
   home: https://github.com/lux-org/lux

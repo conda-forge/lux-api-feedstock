@@ -11,6 +11,7 @@ source:
   sha256: af451e85d263c03fd596251373ff6e34d04e0c0609f2410c830114b84b102613
 
 build:
+  skip: true # [(win and py2k) or (python_impl == 'pypy')]
   number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv

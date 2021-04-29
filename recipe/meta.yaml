@@ -11,7 +11,7 @@ source:
   sha256: af451e85d263c03fd596251373ff6e34d04e0c0609f2410c830114b84b102613
 
 build:
-  skip: true  # [(win and py2k) or (python_impl == 'pypy')]
+  skip: true  # [py<37]
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,13 +21,13 @@ requirements:
     - python 
   run:
     - python 
-    - scipy >=1.3.3
-    - altair >=4.0.0
-    - numpy >=1.19.5
-    - pandas >=1.2.0
-    - scikit-learn >=0.22
-    - lux-widget >=0.1.4
-    - matplotlib-base >=3.0.0
+    - scipy 
+    - altair 
+    - numpy 
+    - pandas 
+    - scikit-learn 
+    - lux-widget 
+    - matplotlib-base 
     - us
     - iso3166
 
@@ -35,10 +35,7 @@ test:
   imports:
     - lux
     - lux._config
-  commands:
-    - pip check
-  requires:
-    - pip
+
 
 about:
   home: https://github.com/lux-org/lux

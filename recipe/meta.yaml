@@ -12,17 +12,16 @@ source:
 
 build:
   number: 0
-  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
-    - python >=3.6
+    - python >=3.7
     - scipy
-    - pandas >=1.2.4
+    - pandas >=1.2
     - scikit-learn
     - lux-widget >=0.1.4
     - altair

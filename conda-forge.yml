@@ -1,2 +1,3 @@
 conda_forge_output_validation: true
 build_with_mamba: true
+channel_priority: false

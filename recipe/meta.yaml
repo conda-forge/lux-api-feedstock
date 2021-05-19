@@ -27,7 +27,6 @@ requirements:
     - altair
     - numpy
     - matplotlib-base
-    - us
     - iso3166
 test:
   imports:

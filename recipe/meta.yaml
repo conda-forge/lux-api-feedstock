@@ -1,5 +1,5 @@
 {% set name = "lux-api" %}
-{% set version = "0.2.3" %}
+{% set version = "0.3.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lux-api-{{ version }}.tar.gz
-  sha256: 81d452027464179fac15c8141b4fd62e37451972fabd534fbb25d29d7cb809db
+  sha256: 87f31b01685539290fe8c758200383928ae54be4fcd708e32dde963d29480624
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -24,10 +24,11 @@ requirements:
     - scipy >=1.3.3
     - altair >=4.0.0
     - numpy >=1.16.5
-    - pandas >=1.1.0
+    - pandas >=1.2.0
     - scikit-learn >=0.22
     - lux-widget >=0.1.4
     - matplotlib-base >=3.0.0
+    - iso3166
 
 test:
   imports:

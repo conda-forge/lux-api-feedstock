@@ -1,5 +1,5 @@
 {% set name = "lux-api" %}
-{% set version = "0.3.2" %}
+{% set version = "0.4.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lux-api-{{ version }}.tar.gz
-  sha256: aef54034bf2c61bff4699fb09c816661d26b2430c89b48c2b66f6639fb00557d
+  sha256: 5b14f0502cc92558461108420460ed940dbf4e82f09fd4cd4ca2d95027602fc1
 
 build:
   number: 0
@@ -28,6 +28,7 @@ requirements:
     - scikit-learn >=0.22
     - lux-widget >=0.1.4
     - matplotlib-base >=3.0.0
+    - autopep8
     - iso3166
 
 test:

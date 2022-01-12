@@ -11,7 +11,7 @@ source:
   sha256: 5b14f0502cc92558461108420460ed940dbf4e82f09fd4cd4ca2d95027602fc1
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -24,7 +24,7 @@ requirements:
     - scipy >=1.3.3
     - altair >=4.0.0
     - numpy >=1.16.5
-    - pandas >=1.2.0,<1.3.0
+    - pandas >=1.2.0,<2
     - scikit-learn >=0.22
     - lux-widget >=0.1.4
     - matplotlib-base >=3.0.0

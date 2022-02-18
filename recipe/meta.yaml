@@ -31,7 +31,7 @@ requirements:
     - autopep8
     - iso3166
     - psutil
-    - sh
+    - sh >=1.14.0
 
 test:
   imports:

@@ -30,6 +30,8 @@ requirements:
     - matplotlib-base >=3.0.0
     - autopep8
     - iso3166
+    - psutil
+    - sh
 
 test:
   imports:
